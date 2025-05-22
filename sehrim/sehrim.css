@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    line-height: 1.5;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+  }
+  .carousel-div {
+    position: relative;
+  }
+  #carouselExampleCaptions {
+    /* position: relative; */
+    /* top: -20px; */
+    max-height: 650px;
+    margin-bottom: 20px;
+  }
+  /* img {
+    height: 500px !important;
+    object-fit: cover;
+  }*/
+  #carouselExampleCaptions img {
+    max-width: 100%;
+    height: 500px !important;
+  }
+  nav {
+    display: block;
+  }
+  #navbar {
+    position: fixed;
+    min-width: 290px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-right: solid #99a2a2;
+  }
+  
+  nav ul {
+    height: 90%;
+    list-style-type: disc;
+    overflow-y: auto;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-left: 0px;
+  }
+  nav ul li {
+    border-top: 1px solid black;
+  }
+  
+  li:nth-child(6) {
+    border-bottom: 1px solid;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  header {
+    color: black;
+    margin: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+  #main-doc header {
+    text-align: left;
+    margin: 0px;
+  }
+  article {
+    margin: 15px;
+  }
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  article ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+  }
+  #img-div {
+    display: block !important;
+  
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  #img {
+    width: 100%;
+  }
+  @media only screen and (max-width: 815px) {
+    #navbar {
+      position: absolute;
+      width: 100%;
+      height: 280px;
+      padding: 0;
+      margin: 0;
+      top: 0;
+    }
+    #navbar ul {
+      height: 205px;
+      border: 1px solid;
+      overflow-y: scroll;
+    }
+    #main-doc {
+      position: relative;
+      margin-top: 270px;
+      margin-left: 0px;
+    }
+    #carouselExampleCaptions {
+      position: static;
+      margin-top: 10px;
+    }
+    #carouselExampleCaptions img {
+      height: 300px !important;
+      object-fit: cover;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #img-div #img {
+      height: 300px;
+    }
+  }
+  
